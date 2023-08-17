@@ -21,6 +21,7 @@ body{
     width: 100%;
     top: 38px;
     position: fixed;
+    z-index: 10;
 }
 .d2{
     position: absolute;
@@ -33,26 +34,28 @@ body{
 
 /*----Cartas heroes----------------*/
 section{
-    position: relative;
-    height: 1000px;
-    width: 1024px;
-    left:  25%;
+    display: flex;
+    height: 900px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 i{
-    position: absolute;
-    top: 25px;
+    position: relative;
+    top: 15px;
     left: 20px;
 }
 /*------------------------------*/
-.batman{
+.batman,.harley,.batman2{
     background-color: #F3F3F3;
     box-shadow: 0px 4px 4px 0px #00000040;
     width: 300px;
     height: 529px;
-    position: absolute;
-    top: 292px;
-    left: 32px;
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 .fondoB,.fondoB2{
     background-image: url(img/fondoB.png);
@@ -67,13 +70,11 @@ i{
     border-radius: 100px;
     position: absolute;
     top: 130px;
-    left: 90px;
 }
-.nombre{
+.nombre,.nombreH,.nombreB2{
     font-size: 30px;
     position: absolute;
     top: 265px;
-    left: 90px;
 }
 .texto{
     color: #333333;
@@ -81,7 +82,6 @@ i{
     height: 170px;
     position: absolute;
     top: 320px;
-    left: 20px;
     text-align: left;
 }
 .verMas{
@@ -92,19 +92,10 @@ i{
     font-size: 15px;
     position: absolute;
     top: 465px;
-    left: 90px;
 }
 
 /*------------------------------*/
-.harley{
-    background-color: #F3F3F3;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    width: 300px;
-    height: 529px;
-    position: absolute;
-    top: 292px;
-    left: 362px;
-}
+
 .fondoH{
     background-image: url(img/fondoHarley.png);
     width: 300px;
@@ -118,26 +109,9 @@ i{
     border-radius: 100px;
     position: absolute;
     top: 130px;
-    left: 90px;
-}
-.nombreH{
-    font-size: 30px;
-    position: absolute;
-    top: 265px;
-    left: 65px;
 }
 /*------------------------------*/
-.batman2{
-    background-color: #F3F3F3;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    width: 300px;
-    height: 529px;
-    position: absolute;
-    top: 292px;
-    left: 692px;
-}
 
-/*---------------------------*/
 footer{
     background: #00669F;
     height: 51px;
